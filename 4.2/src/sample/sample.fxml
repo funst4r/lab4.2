@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="200.0" style="-fx-background-color: lightpink;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <RadioButton fx:id="f2" layoutX="25.0" layoutY="194.0" mnemonicParsing="false" onAction="#calc" text="Formula 2">
+            <toggleGroup>
+                <ToggleGroup fx:id="f" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="f1" layoutX="25.0" layoutY="160.0" mnemonicParsing="false" onAction="#calc" text="Formula 1" toggleGroup="$f" />
+        <Button fx:id="mc" layoutX="138.0" layoutY="156.0" mnemonicParsing="false" onAction="#mc" text="MC" />
+        <Button fx:id="mPlus" layoutX="137.0" layoutY="190.0" mnemonicParsing="false" onAction="#mPlus" text="M+" />
+        <TextField layoutX="25.0" layoutY="10.0" fx:id="x" />
+        <Label layoutX="14.0" layoutY="14.0" text="x:" />
+        <TextField fx:id="y" layoutX="25.0" layoutY="36.0" />
+        <Label layoutX="14.0" layoutY="40.0" text="y:" />
+        <TextField fx:id="z" layoutX="25.0" layoutY="62.0" />
+        <Label layoutX="14.0" layoutY="66.0" text="z:" />
+        <TextField fx:id="func" editable="false" layoutX="25.0" layoutY="95.0" />
+        <TextField fx:id="m" editable="false" layoutX="25.0" layoutY="121.0" />
+        <Label layoutX="17.0" layoutY="99.0" text="f:" />
+        <Label layoutX="11.0" layoutY="125.0" text="m:" />
+    </children>
+</AnchorPane>
